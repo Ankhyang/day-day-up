@@ -3,6 +3,9 @@ import router from './router' // 挂载路由
 import store from "./utils/store" //加载状态管理
 import App from './App'  //主页面
 
+import Directives from './utils/directives' // 自定义指令
+Vue.use(Directives)
+
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
 Vue.use(Antd)
