@@ -12,6 +12,10 @@ import Directive from '../custome_directives'
 import FloatingBall from "../css/content_floating_ball"
 // 伪类元素结合attr练习
 import ContentAttr from "../css/content_attr";
+// 文字渐入显示特效
+import TextSlideIn from "../css/text_slide_in";
+
+import PunkBtn from "../css/punk_btn";
 export default {
     name: 'home',
     components: {
@@ -21,12 +25,14 @@ export default {
         InertiaFunc,
         CssBorder,
         FloatingBall,
-        ContentAttr
+        ContentAttr,
+        TextSlideIn,
+        PunkBtn
     },
     render() {
         return (
             <div>
-                <ContentAttr/>
+                <PunkBtn/>
             </div>
         )
     }
@@ -35,6 +41,10 @@ export default {
 
 <style lang="less" scoped>
     div{
-        margin: 100px auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>
