@@ -14,6 +14,8 @@ import FloatingBall from "../css/content_floating_ball"
 import ContentAttr from "../css/content_attr";
 // 文字渐入显示特效
 import TextSlideIn from "../css/text_slide_in";
+// 骨架屏
+import Skeleton from "../css/skeleton";
 
 import PunkBtn from "../css/punk_btn";
 export default {
@@ -27,12 +29,13 @@ export default {
         FloatingBall,
         ContentAttr,
         TextSlideIn,
-        PunkBtn
+        PunkBtn,
+        Skeleton
     },
     render() {
         return (
             <div>
-                <PunkBtn/>
+                <Skeleton/>
             </div>
         )
     }
