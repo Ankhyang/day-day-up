@@ -14,8 +14,10 @@ import FloatingBall from "../css/content_floating_ball"
 import ContentAttr from "../css/content_attr";
 // 文字渐入显示特效
 import TextSlideIn from "../css/text_slide_in";
-
+// 朋克风按钮特效
 import PunkBtn from "../css/punk_btn";
+// 算法
+import twoNumsSum from '../algorithm/two_nums_sum'
 export default {
     name: 'home',
     components: {
@@ -27,12 +29,13 @@ export default {
         FloatingBall,
         ContentAttr,
         TextSlideIn,
-        PunkBtn
+        PunkBtn,
+        twoNumsSum
     },
     render() {
         return (
             <div>
-                <PunkBtn/>
+                <twoNumsSum/>
             </div>
         )
     }
@@ -44,6 +47,7 @@ export default {
         width: 100%;
         height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
