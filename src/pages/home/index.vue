@@ -16,6 +16,8 @@ import ContentAttr from "../css/content_attr";
 import TextSlideIn from "../css/text_slide_in";
 // 朋克风按钮特效
 import PunkBtn from "../css/punk_btn";
+// 骨架屏
+import Skeleton from "../css/skeleton";
 // 算法
 import twoNumsSum from '../algorithm/two_nums_sum'
 export default {
@@ -30,6 +32,7 @@ export default {
         ContentAttr,
         TextSlideIn,
         PunkBtn,
+        Skeleton,
         twoNumsSum
     },
     render() {
